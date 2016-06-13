@@ -1,0 +1,64 @@
+body {
+  -webkit-perspective: 500px; /* Chrome, Safari, Opera */
+  perspective: 500px;
+  font-family: 'Satisfy', cursive;
+  background: #000;
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+  .container-fluid {
+    transform-style: preserve-3d;
+    animation: rotate 10s infinite linear;
+
+    #rightMenu {
+      z-index: 2;
+      transform: rotateY(45deg);
+      width: 1300px;
+      height: 530px;
+      background: #000;
+      opacity: 0.6;
+      padding: 10px;
+
+      #rightMenu img {
+        width: 300px;
+        height: 250px;
+        max-width: 300px;
+        max-height: 250px;
+      }
+
+      @keyframes rotate {
+        50% {
+          transform: rotateX(-15deg);
+        }
+      }
+    }
+  }
+
+  #middle {
+    background: silver;
+    color: black;
+    border-radius: 5px;
+    z-index: 3;
+    position: absolute;
+    padding: 15px;
+  }
+
+  #middle:hover {
+    background: #8c8c8c;
+    color: silver;
+    border: 1px dashed black;
+  }
+
+  #middle:active {
+    background: #6f6f6f;
+  }
+}
+
+
