@@ -3,7 +3,7 @@ body {
   /* Chrome, Safari, Opera */
   perspective: 500px;
   font-family: 'Satisfy', cursive;
-  background: #000;
+  background: url(../img/mainFont/1.jpg);
 }
 body a {
   color: black;
@@ -14,35 +14,41 @@ body a:hover {
 }
 body .container-fluid {
   transform-style: preserve-3d;
-  animation: rotate 10s infinite linear;
+  animation: rotate 20s infinite linear;
 }
 body .container-fluid #rightMenu {
   z-index: 2;
   transform: rotateY(45deg);
-  width: 1000px;
-  height: 530px;
-  background: #000;
-  opacity: 0.5;
-  padding: 10px;
 }
-body .container-fluid #rightMenu #rightMenu img {
-  width: 300px;
-  height: 250px;
-  max-width: 300px;
-  max-height: 250px;
+body .container-fluid #rightMenu .img {
+  opacity: 0.6;
+}
+body .container-fluid #rightMenu .img img {
+  border: 3px solid #cee7fd;
+  border-radius: 30px;
 }
 @keyframes rotate {
   50% {
     transform: rotateX(-15deg);
   }
 }
-body #Earth {
+body #earth {
+  position: relative;
+  z-index: 1;
   opacity: 0.7;
+  transform-style: preserve-3d;
+  animation: earth 20s infinite linear;
 }
-body .search {
+@keyframes earth {
+  30% {
+    transform: rotateZ(15deg);
+  }
+}
+body .top-right-menu {
   margin: 25px 25px 25px 0;
   float: right;
-  background: silver;
+  background: #cee7fd;
+  opacity: 0.8;
   color: black;
   border-radius: 5px;
   z-index: 3;
