@@ -19,10 +19,10 @@ body .container-fluid {
 body .container-fluid #rightMenu {
   z-index: 2;
   transform: rotateY(45deg);
-  width: 1300px;
+  width: 1000px;
   height: 530px;
   background: #000;
-  opacity: 0.6;
+  opacity: 0.5;
   padding: 10px;
 }
 body .container-fluid #rightMenu #rightMenu img {
@@ -36,8 +36,27 @@ body .container-fluid #rightMenu #rightMenu img {
     transform: rotateX(-15deg);
   }
 }
-body #middle {
-  margin: -100px 0;
+body #Earth {
+  opacity: 0.7;
+}
+body .search {
+  margin: 25px 25px 25px 0;
+  float: right;
+  background: silver;
+  color: black;
+  border-radius: 5px;
+  z-index: 3;
+  padding: 15px;
+}
+body .search:hover {
+  background: #8c8c8c;
+  color: silver;
+  border: 1px dashed black;
+}
+body .search:active {
+  background: #6f6f6f;
+}
+body .middle {
   background: silver;
   color: black;
   border-radius: 5px;
@@ -45,11 +64,11 @@ body #middle {
   position: absolute;
   padding: 15px;
 }
-body #middle:hover {
+body .middle:hover {
   background: #8c8c8c;
   color: silver;
   border: 1px dashed black;
 }
-body #middle:active {
+body .middle:active {
   background: #6f6f6f;
 }
